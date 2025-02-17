@@ -2,6 +2,7 @@ import 'package:tugas/armor_titan.dart';
 import 'package:tugas/attack_titan.dart';
 import 'package:tugas/beast_titan.dart';
 import 'package:tugas/human.dart';
+import 'package:tugas/trapesium.dart';
 import 'bangundatar.dart';
 import 'lingkaran.dart';
 import 'persegi.dart';
@@ -38,7 +39,17 @@ void main() {
   BangunDatar segitiga = Segitiga(3, 4, 3, 4);
 
   print("Luas dan Keliling Bangun Datar");
-  print("Lingkaran: Luas = \${lingkaran.luas()}, Keliling = \${lingkaran.keliling()}");
-  print("Persegi: Luas = \${persegi.luas()}, Keliling = \${persegi.keliling()}");
-  print("Segitiga: Luas = \${segitiga.luas()}, Keliling = \${segitiga.keliling()}");
+  print("Lingkaran: Luas = ${lingkaran.luas()}, Keliling = ${lingkaran.keliling()}");
+  print("Persegi: Luas = ${persegi.luas()}, Keliling = ${persegi.keliling()}");
+  print("Segitiga: Luas = ${segitiga.luas()}, Keliling = ${segitiga.keliling()}");
+
+
+  // Membuat object dari class Trapesium
+  var trapesium1 = Trapesium(10.0, 20.0, 15.0);
+
+  // Menghitung luas trapesium
+  double luas = trapesium1.hitungLuas();
+  
+  // Menampilkan hasil
+  print("Luas trapesium adalah: $luas");
 }
